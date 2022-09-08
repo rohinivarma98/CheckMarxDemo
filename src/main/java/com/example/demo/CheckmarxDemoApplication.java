@@ -11,6 +11,7 @@ public class CheckmarxDemoApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext ctx = SpringApplication.run(CheckmarxDemoApplication.class, args);
+		System.out.println("Hello World");
 		HelloService hs = ctx.getBean(HelloService.class);
 		hs.sayHello();
 	}
